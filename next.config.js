@@ -4,7 +4,7 @@ const __dirname = path.resolve();
 export default {
   reactStrictMode: true,
   swcMinify: true,
-  output: "standalone",
+  output: 'export',
   poweredByHeader: false,
   compiler: {
     emotion: {
