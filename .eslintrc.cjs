@@ -27,5 +27,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
+    'max-len': [1, { code: 150, ignoreComments: true, ignoreTrailingComments: true }],
   },
 };
