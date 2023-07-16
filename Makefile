@@ -7,6 +7,10 @@ down:
 sh:
 	docker compose run app sh
 
+test: build-image
+	docker compose run app yarn test
+
+
 build: build-image
 	docker compose run app yarn build
 

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home> should render component 1`] = `
+<div>
+  <h1>
+    index
+  </h1>
+  <h3>
+    global styled
+  </h3>
+  <h2
+    className="css-1tvt44g e1kzrjjz0"
+  >
+    emotion styled
+  </h2>
+  <span>
+    <input
+      onClick={[Function]}
+      type="submit"
+      value="hit rand API"
+    />
+    0
+  </span>
+</div>
+`;

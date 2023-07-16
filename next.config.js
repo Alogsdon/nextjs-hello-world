@@ -1,4 +1,6 @@
 import path from 'path';
+
+// eslint-disable-next-line no-underscore-dangle
 const __dirname = path.resolve();
 
 export default {
@@ -9,8 +11,8 @@ export default {
   compiler: {
     emotion: {
       sourceMap: true,
-      autoLabel: "dev-only",
-      labelFormat: "[local]",
+      autoLabel: 'dev-only',
+      labelFormat: '[local]',
       importMap: undefined,
     },
   },
