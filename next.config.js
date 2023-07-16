@@ -17,5 +17,4 @@ export default {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  runtime: 'edge',
 };
