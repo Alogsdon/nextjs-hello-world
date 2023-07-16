@@ -1,22 +1,25 @@
 
-up: build start attach
+up: build-image start attach
 
 down: 
-	docker-compose down
+	docker compose down
 
 sh:
-	docker-compose run app sh
+	docker compose run app sh
 
-build:
-	docker-compose build
+build: build-image
+	docker compose run app yarn build
+
+build-image:
+	docker compose build
 
 rebuild:
-	docker-compose build --no-cache
+	docker compose build --no-cache
 
 # -d runs detached
 start:
-	docker-compose up -d
+	docker compose up -d
 
 attach:
-	docker-compose logs -f
+	docker compose logs -f
 

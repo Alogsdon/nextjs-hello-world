@@ -10,7 +10,9 @@ services:
     env_file:
       - .env
     volumes:
-      - ./:/app
+      - ./pages:/app/pages
+      - ./source:/app/source
+      - ./styles:/app/styles
     command: yarn dev
     ports:
       - "3000:3000"
